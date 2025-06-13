@@ -723,18 +723,20 @@ async function connectToWA() {
         }
 
         conn.serializeM = (mek) => sms(conn, mek, store)
-      } catch (err) {
-        l(`Toxic-MD: Critical error in connectToWA: ${err}`)
-        process.exit(1)
-      }
-    }
+        } catch (err) {
+    l(`Toxic-MD: Critical error in connectToWA: ${err}`)
+    process.exit(1)
+  }
+}
 
-    app.get('/', (req, res) => {
-      res.send(`${botName} STARTED, LET’S CAUSE SOME CHAOS! 😈`)
-    })
+conn.serializeM = (mek) => sms(conn, mek, store)
 
-    app.listen(port, () => l(`Toxic-MD: Server running on http://localhost:${port}, ready to dominate!`))
+app.get('/', (req, res) => {
+  res.send(`${botName} STARTED, LET’S CAUSE SOME CHAOS! 😈`)
+})
 
-    setTimeout(() => {
-      connectToWA()
-    }, 4000)
+app.listen(port, () => l(`Toxic-MD: Server running on http://localhost:${port}, ready to dominate!`))
+
+setTimeout(() => {
+  connectToWA()
+}, 4000)
