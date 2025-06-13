@@ -1,189 +1,151 @@
-
 {
-    "bot-name": "SHADOW-XTECH",
-    "description": "Whiskey Sockets Baileys Whatsapp bot By Mr popkid",
-    "logo": "https://files.catbox.moe/3hrxbh.jpg",
-    "keywords": ["bot"],
-    "documentation-link": "https://popkidsessiioons.onrender.com",
-    "owner-verification": "blacktappy5@gmail.com",
-  
-    "env": {
-      "SESSION_ID": {
-        "description": "Put your SESSION_ID here. Make sure it starts with POPKID~  or get session id from here,  https://paircase.onrender.com/pair",
-        "value":"",
-        "required": true
-        
-      },
-      "PREFIX": {
-        "description": "Bot command prefix, (e.g, . , ! @ etc",
-        "value":".",
-        "required": true
-        
-      },
-    
- 
-    "STICKER_NAME": {
-      "description": "type your sticker pack name.",
-      "required": false,
-      "value": "Sʜᴀᴅᴏᴡ-Xᴛᴇᴄʜ"
-    }, 
-      
+  "bot-name": "Toxic-MD",
+  "version": "3.0.1",
+  "description": "A WhatsApp Bot by xh_clinton to roast noobs and rule chats! 💥",
+  "logo": "https://files.catbox.moe/3hrxbh.jpg",
+  "keywords": ["bot", "whatsapp", "toxic"],
+  "documentation-link": "",
+  "owner-verification": "xhclinton@gmail.com",
+  "env": {
+    "SESSION_ID": {
+      "description": "Drop your SESSION_ID here, or Toxic-MD will haunt you! Starts with Toxic-MD~ 😎",
+      "value": "",
+      "required": true
+    },
     "PREFIX": {
-      "description": "paste your bot prefix note! Don't apply null prefix.",
-      "required": false,
-      "value": "."
+      "description": "Set the command prefix, like . or !. No nulls, you noob! 😤",
+      "value": ".",
+      "required": true
     },
-    
-    "MODE": {
-      "description": "select your bot work type public-private-inbox-group.",
-      "required": false,
-      "value": "public"
-      
-    },
-    
-    
-    "ALWAYS_ONLINE": {
-      "description": "Make it true if want always online.",
-      "required": false,
-      "value": "false"  
-    },    
-  
-    "AUTO_VOICE": {
-      "description": "Make it true if want automatic voice reply .",
-      "required": false,
-      "value": "false"
-    }, 
-
-    "AUTO_REPLY": {
-      "description": "Make it true if you want automatic reply.",
-      "required": false,
-      "value": "false"
-    }, 
-
-    "AUTO_STICKER": {
-      "description": "Make it true if you want automatic sticker.",
-      "required": false,
-      "value": "false"
-    }, 
-
-
-    "AUTO_STATUS_REACT": {
-      "description": "Make it true for automatic status react & seen.",
-      "required": true,
-      "value": "true"
-    }, 
-
-    "AUTO_STATUS_REPLY": {
-      "description": "Make it true for auto reply msg on status seen.",
-      "required": true,
-      "value": "false"
-    }, 
-
-    "AUTO_STATUS_MSG": {
-      "description": "Type custom message on status reply",
-      "required": true,
-      "value": "*Sʜᴀᴅᴏᴡ-Xᴛᴇᴄʜ 𝑩𝒐𝒕 𝑽𝒊𝒆𝒘𝒆𝒅 𝒀𝒐𝒖𝒓 𝑺𝒕𝒂𝒕𝒖𝒔 🦄*"
-   
-     }, 
-    
-    "OWNER_NAME": {
-      "description": "Type Bot Owner Name.",
-      "required": false,
-      "value": "Ⴊl𐌀Ꮳk𐌕𐌀ႲႲჄ"
-}, 
-
-    "OWNER_NUMBER": {
-      "description": "put the owner number for bot.",
-      "required": false,
-      "value": "254759000340"
-
-    }, 
-
     "BOT_NAME": {
-      "description": "Type here the bot name.",
-      "required": false,
-      "value": "Sʜᴀᴅᴏᴡ-Xᴛᴇᴄʜ"
-
-      }, 
-
+      "description": "Name your bot. It’s Toxic-MD, so don’t mess it up! 😈",
+      "value": "Toxic-MD",
+      "required": false
+    },
+    "OWNER_NAME": {
+      "description": "The legend behind the bot. xh_clinton, who else? 😎",
+      "value": "xh_clinton",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner numbers, comma-separated. Don’t screw this up! 😡",
+      "value": "254735342808",
+      "required": false
+    },
+    "STICKER_NAME": {
+      "description": "Sticker pack name. Toxic-MD stickers slap hard! 💀",
+      "value": "Toxic-MD",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot mode: public, private, inbox, or groups. Choose wisely! 😏",
+      "value": "public",
+      "required": false
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Set true to keep Toxic-MD online 24/7, ready to roast! 🔥",
+      "value": "true",
+      "required": false
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "Set true to auto-view statuses like a creep! 👀",
+      "value": "true",
+      "required": true
+    },
+    "AUTO_STATUS_REACT": {
+      "description": "Set true to auto-react to statuses with toxic emojis! 😈",
+      "value": "true",
+      "required": true
+    },
+    "AUTO_STATUS_REPLY": {
+      "description": "Set true to auto-reply to statuses and clown them! 😜",
+      "value": "false",
+      "required": true
+    },
+    "AUTO_STATUS_MSG": {
+      "description": "Custom status reply message. Make it savage! 💥",
+      "value": "*TOXIC-MD SAW YOUR LAME STATUS! 😈*",
+      "required": true
+    },
     "ANTI_LINK": {
-      "description": "Make it true if you want bot auto remove group link.",
-      "required": true,
-      "value": "true"
-      
+      "description": "Set true to nuke group links. No spammers allowed! 🚫",
+      "value": "true",
+      "required": true
     },
-
+    "DELETE_LINKS": {
+      "description": "Set true to delete links without kicking. Be nice... or not! 😏",
+      "value": "true",
+      "required": false
+    },
     "MENTION_REPLY": {
-      "description": "make it true if want mention reply if someone menetion you.",
-      "required": false,
-      "value": "false"
+      "description": "Set true for auto voice replies when mentioned. Annoy everyone! 😤",
+      "value": "false",
+      "required": false
     },
-    
     "MENU_IMAGE_URL": {
-      "description": "add url for mention reply and menu if want.",
-      "required": false,
-      "value": "https://files.catbox.moe/3hrxbh.jpgg"
+      "description": "URL for menu/mention images. Make it dope or get roasted! 🎨",
+      "value": "https://files.catbox.moe/3hrxbh.jpg",
+      "required": false
     },
-        
     "ANTI_BAD": {
-      "description": "Make it true if you want bot auto delete bad words.",
-      "required": false,
-      "value": "false"
-    }, 
-
-     "DESCRIPTION": {
-      "description": "add caption for menu and other",
-      "required": false,
-      "value": "*© Gᴇɴᴇʀᴀᴛᴇᴅ ʙʏ Sʜᴀᴅᴏᴡ-Xᴛᴇᴄʜ*"
+      "description": "Set true to delete bad words. Keep it clean or get wrecked! 😡",
+      "value": "false",
+      "required": false
     },
-
-      "DELETE_LINKS": {
-      "description": "remove links from group automatically without removing member",
-      "required": false,
-      "value": "true"
+    "DESCRIPTION": {
+      "description": "Caption for menu and more. Powered by xh_clinton, bow down! 😎",
+      "value": "*© Powered by xh_clinton*",
+      "required": false
     },
-    
+    "AUTO_VOICE": {
+      "description": "Set true for auto voice replies. Spam those chats! 🗣️",
+      "value": "false",
+      "required": false
+    },
+    "AUTO_STICKER": {
+      "description": "Set true for auto stickers. Slap ‘em with Toxic-MD! 😈",
+      "value": "false",
+      "required": false
+    },
+    "AUTO_REPLY": {
+      "description": "Set true for auto text replies. Flood the chat! 💬",
+      "value": "false",
+      "required": false
+    },
     "AUTO_RECORDING": {
-      "description": "Make it true if you want auto recoding.",
-      "required": false,
-      "value": "false"
+      "description": "Set true for auto recording. Be that annoying bot! 🎙️",
+      "value": "false",
+      "required": false
     },
-
     "AUTO_TYPING": {
-      "description": "Make it true if you want auto typing.",
-      "required": false,
-      "value": "false"
+      "description": "Set true to show typing. Tease those noobs! ⌨️",
+      "value": "false",
+      "required": false
     },
-
     "AUTO_REACT": {
-      "description": "Make it true if you want react on every message.",
-      "required": false,
-      "value": "false"
+      "description": "Set true to react to every message. Spam emojis! 😈",
+      "value": "false",
+      "required": false
     },
-    
     "CUSTOM_REACT": {
-      "description": "Make it true if you want custom reactions.",
-      "required": false,
-      "value": "false"
-      
-    }, 
-    
+      "description": "Set true for custom reactions. Be extra toxic! 😎",
+      "value": "false",
+      "required": false
+    },
     "CUSTOM_REACT_EMOJIS": {
-      "description": "put here custom react react emojis.",
-      "required": false,
-      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
-    }, 
-    
+      "description": "Custom emojis for reactions. Go wild, you savage! 😈",
+      "value": "😈,💀,🔥,🖕",
+      "required": false
+    },
     "ANTI_DEL_PATH": {
-      "description": "change it to -same- if you want to resend deleted message in same chat",
-      "required": false,
-      "value": "log"
-    }, 
-
+      "description": "Set to 'same' to resend deleted messages in same chat. Be sneaky! 🕵️",
+      "value": "log",
+      "required": false
+    },
     "READ_MESSAGE": {
-      "description": "Make it true if you want bot read your all sms just now.",
-      "required": false,
-      "value": "false"
+      "description": "Set true to auto-read all messages. Stalk much? 👀",
+      "value": "false",
+      "required": false
     }
   }
 }
