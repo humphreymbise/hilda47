@@ -727,7 +727,7 @@ async function connectToWA() {
     l(`Toxic-MD: Critical error in connectToWA: ${err}`)
     process.exit(1)
   }
-}
+})
 
 conn.serializeM = (mek) => sms(conn, mek, store)
 
