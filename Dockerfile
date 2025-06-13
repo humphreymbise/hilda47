@@ -4,13 +4,14 @@ RUN apt-get update && \
     apt-get install -y \
     ffmpeg \
     imagemagick \
-    webp && \
+    webp \
+    git && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root/Toxic-v4
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 RUN npm install && npm install -g qrcode-terminal pm2
 
 COPY . .
