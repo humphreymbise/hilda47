@@ -1,12 +1,12 @@
 {
-  "name": "PK-XMD",
+  "name": "HILDA47",
   "version": "4.5.0",
   "description": "A WhatsApp Bot Created By pkdriller",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name PK-XMD",
-    "stop": "pm2 stop PK-XMD",
-    "restart": "pm2 restart PK-XMD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name HILDA47",
+    "stop": "pm2 stop HILDA47",
+    "restart": "pm2 restart HILDA47"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "github:Jeliostarr/DEV-Baileys#main",
